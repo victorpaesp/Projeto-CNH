@@ -6,131 +6,145 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <title>CNH</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 
-    <body>
+    <body>        
         
-        <header>
-            <div class="header"> 
+        <div class="header"> 
 
-                <div class="logo">
-                    <img src="https://logodownload.org/wp-content/uploads/2017/03/brasao-do-brasil-republica-1.png" width="100%"/>
-                </div>   
+            <div>
+                <img src="https://logodownload.org/wp-content/uploads/2017/03/brasao-do-brasil-republica-1.png" width="100%"/>
+            </div>   
 
-                <div class="cabecalho">                          
-                    <p> República Federativa do Brasil    </p>  
-                    <p> Ministério das cidades            </p>   
-                    <p> Departamento nacional de transito </p> 
-                    <p> Carteira nacional de habilitação  </p> 
+            <div class="header__text">                          
+                <p><h1> República Federativa do Brasil </h1> </p>  
+                <p>     Ministério da infraestrutura         </p>   
+                <p>     Departamento nacional de transito    </p> 
+                <p>     Carteira nacional de habilitação     </p> 
+            </div>
+            
+            <div>
+                <img src="https://static.congressoemfoco.uol.com.br/2016/09/s%C3%A3o-paulo.png" width="120%" style="padding-top: 15px;" />
+            </div>  
+
+            <div class="header__sigla">                          
+                <p> S </p>  
+                <p> P </p> 
+            </div>
+
+        </div> 
+       
+        <div class="body">
+            
+            <div class="sidebar" align="center"> 
+                
+                <div class="sidebar__logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Contorno_do_mapa_do_Brasil.svg/1024px-Contorno_do_mapa_do_Brasil.svg.png" width="70%" />
+                </div>
+
+                <div class="sidebar__text">
+                    <p> <nobr> Válido em todo        </nobr> </p>  
+                    <p> <nobr> O Território Nacional </nobr> </p>   
+                    <h4>       1234567890                    </h4> 
                 </div>
                 
-                <div class="logo_2">
-                    <img src="https://static.congressoemfoco.uol.com.br/2016/09/s%C3%A3o-paulo.png" width="120%" />
-                </div>  
+            </div>   
 
-                <div class="sigla">                          
-                    <p> S </p>  
-                    <p> P </p> 
-                </div>
-            </div> 
-        </header>
-       
-        <div class="section">
-            <aside>
-                <div class="sidebar" align="center"> 
-                    <div class="logo_3">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Contorno_do_mapa_do_Brasil.svg/1024px-Contorno_do_mapa_do_Brasil.svg.png" width="55%" />
-                    </div>
+            <form action="" method="post">
 
-                    <div class="sidetext">
-                        <p> <nobr> Válido em todo      </nobr> </p>  
-                        <p> <nobr> Território Nacional </nobr> </p>   
-                        <h4> 9999999999                         </h4> 
-                    </div>
-                    
-                </div>
-            </aside>
-
-            <div class="article">
-
-                <div class="conteudo">
-
-                    <div class="name">              
-                        <label for="name"> Nome </label> <br>
+                <div class="name"> 
+                    <fieldset>
+                        <legend> Nome </legend>                                   
+                        <label for="name"></label> 
                         <input type="text">
-                    </div>   
+                    </fieldset>  
+                </div>
+                        
+
+                <div class="content">
                     
-                    
-                    <div class="side">
-                        <div class="foto34" >                     
-                            <img src="https://closekids.com.br/wp-content/uploads/2017/06/3x4-Ind.jpg" width="90%" />
+                    <div class="content__left">
+                        <div class="content__foto3x4" >                     
+                            <label for="foto"> <img src="https://closekids.com.br/wp-content/uploads/2017/06/3x4-Ind.jpg" width="90%" /></label>
+                            <input type="file" id="foto" name="foto" accept="image/png, image/jpeg">
                         </div>
 
-                        <div class="registro">                     
-                            <label for="registro">Registro 
-                                <input type="text" id="registro" style="color: red;">
-                            </label>
+                        <div class="content__labelReg"> 
+                            <fieldset>      
+                                <legend> Nº Registro </legend>              
+                                <label for="registro"> <input type="text" id="registro" style="color: red;"> </label>
+                            </fieldset>
                         </div>
                     </div>
                                 
-                    <div class="infos">                           
+                    <div class="content__right">                           
 
-                        <div class="first_line">                     
-                            <label for="rg">Doc. Identidade / Órg. emissor / uf 
-                                <input type="text" id="rg">
-                            </label>
+                        <div>      
+                            <fieldset>  
+                                <legend> Doc. Identidade / Órg emissor / uf </legend>             
+                                <label for="rg"> <input type="text" id="rg"> </label>
+                            </fieldset>                                
+                        </div>
+
+                        <div class="flex_line">              
+                            <fieldset>    
+                                <legend> CPF </legend>   
+                                <label for="cpf"> <input type="text" name="cpf" maxlength="14" onkeydown="javascript: fMasc( this, mCPF );"> </label> 
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend> Data nascimento </legend>
+                                <label for="data"> <input type="text" name="data" maxlength="10" onkeydown="javascript: fMasc( this, mData );">  </label>  
+                            </fieldset>
+                        </div>
+
+                        <div> 
+                            <fieldset>           
+                                <legend> Filiação </legend>         
+                                <label for="filiacao"> </label>                            
+                                <textarea id="filiacao" rows="2" ></textarea>
+                            </fieldset>
+                        </div>
+
+                        <div class="flex_line">  
+                            <fieldset disabled>       
+                                <legend> Permissão </legend>            
+                                <label for="permissao"> <input type="text" id="permissao" style="background-color: black;" > </label> 
+                            </fieldset>
+                            
+                            <fieldset disabled class="fieldset_center">
+                                <legend> ACC </legend>
+                                <label for="acc"> <input type="text" id="acc" style="background-color: black;"> </label> 
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>Cat. Hab </legend>
+                                <label for="cat">
+                                    <select id="cat" name="cat" style="color: red;">
+                                        <option value="opt">------</option>
+                                        <option value="a">A</option>
+                                        <option value="acc">ACC</option>
+                                        <option value="b">B</option>
+                                        <option value="c">C</option>
+                                        <option value="d">D</option>
+                                        <option value="e">E</option>
+                                    </select>
+                                </label> 
+                            </fieldset>
                             
                         </div>
 
-                        <div class="second_line">                     
-                            <label for="cpf">CPF  
-                                <input type="text" id="cpf"> 
-                            </label> 
-
-                            <label for="data">Data nascimento 
-                                <input type="text" id="data"> 
-                            </label>  
-                        </div>
-
-                        <div class="third_line">                     
-                            <label for="filiacao"> Filiação </label>                             
-                            <textarea id="filiacao" rows="2" > </textarea>
-                        </div>
-
-                        <div class="fourth_line">                     
-                            <label for="permissao">Permissão 
-                                <input type="text" id="permissao" style="background-color: black;" disabled> 
-                            </label> 
-                           
+                        <div class="flex_line">  
+                            <fieldset>
+                                <legend> Validade </legend>
+                                <label for="validade"> <input type="text" name="data" maxlength="10" onkeydown="javascript: fMasc( this, mData );" style="color: red;">  </label> 
+                            </fieldset>
                             
-                            <label for="acc">ACC 
-                                <input type="text" id="acc" style="background-color: black;" disabled> 
-                            </label> 
-                            
-                            
-                            <label for="cat">Cat. Hab. 
-                                <select id="cat" name="cat">
-                                    <option value="a">A</option>
-                                    <option value="acc">ACC</option>
-                                    <option value="b">B</option>
-                                    <option value="c">C</option>
-                                    <option value="d">D</option>
-                                    <option value="e">E</option>
-                                  </select>
-                            </label> 
-                            
-                        </div>
-
-                        <div class="fifth_line">  
-                            <label for="validade">Validade  
-                                <input type="text" id="validade" style="color: red;">   
-                            </label> 
-                            
-                            
-                            <label for="habilitacao">1 Habilitação 
-                                <input type="text" id="habilitacao">  
-                            </label>                                           
+                            <fieldset>
+                                <legend> 1 Habilitação </legend>
+                                <label for="habilitacao"> <input type="text" name="data" maxlength="10" onkeydown="javascript: fMasc( this, mData );">  </label> 
+                            </fieldset>                                          
                         </div>
 
                     </div>
@@ -138,9 +152,12 @@
 
                 </div>
                 
-            </div>
+                <div class="submit">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
         </div>
 
-
+        <script type="text/javascript" src="js/mask.js"></script>  
     </body>
 </html>
