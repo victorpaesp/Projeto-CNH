@@ -56,8 +56,7 @@
                 <div class="name"> 
                     <fieldset>
                         <legend> Nome </legend>                                   
-                        <label for="name"></label> 
-                        <input type="text">
+                        <label for="name"> <input required type="text" autofocus> </label> 
                     </fieldset>  
                 </div>
                         
@@ -67,13 +66,13 @@
                     <div class="content__left">
                         <div class="content__foto3x4" >                     
                             <label for="foto"> <img src="https://closekids.com.br/wp-content/uploads/2017/06/3x4-Ind.jpg" width="90%" /></label>
-                            <input type="file" id="foto" name="foto" accept="image/png, image/jpeg">
+                            <input required type="file" id="foto" name="foto" accept="image/png, image/jpeg">
                         </div>
 
                         <div class="content__labelReg"> 
                             <fieldset>      
                                 <legend> Nº Registro </legend>              
-                                <label for="registro"> <input type="text" id="registro" style="color: red;"> </label>
+                                <label for="registro"> <input required type="text" id="registro" style="color: red;"> </label>
                             </fieldset>
                         </div>
                     </div>
@@ -83,19 +82,19 @@
                         <div>      
                             <fieldset>  
                                 <legend> Doc. Identidade / Órg emissor / uf </legend>             
-                                <label for="rg"> <input type="text" id="rg"> </label>
+                                <label for="rg"> <input required type="text" id="rg" placeholder="12345678 SSP SP" > </label>
                             </fieldset>                                
                         </div>
 
                         <div class="flex_line">              
                             <fieldset>    
                                 <legend> CPF </legend>   
-                                <label for="cpf"> <input type="text" name="cpf" maxlength="14" onkeydown="javascript: fMasc( this, mCPF );"> </label> 
+                                <label for="cpf"> <input required type="text" name="cpf" maxlength="14" onkeydown="javascript: fMasc( this, mCPF );"> </label> 
                             </fieldset>
                             
                             <fieldset>
                                 <legend> Data nascimento </legend>
-                                <label for="data"> <input type="text" name="data" maxlength="10" onkeydown="javascript: fMasc( this, mData );">  </label>  
+                                <label for="data"> <input required type="text" name="data" maxlength="10" onkeydown="javascript: fMasc( this, mData );">  </label>  
                             </fieldset>
                         </div>
 
@@ -110,12 +109,12 @@
                         <div class="flex_line">  
                             <fieldset disabled>       
                                 <legend> Permissão </legend>            
-                                <label for="permissao"> <input type="text" id="permissao" style="background-color: black;" > </label> 
+                                <label for="permissao"> <input required type="text" id="permissao" style="background-color: black;" > </label> 
                             </fieldset>
                             
                             <fieldset disabled class="fieldset_center">
                                 <legend> ACC </legend>
-                                <label for="acc"> <input type="text" id="acc" style="background-color: black;"> </label> 
+                                <label for="acc"> <input required type="text" id="acc" style="background-color: black;"> </label> 
                             </fieldset>
                             
                             <fieldset>
@@ -138,12 +137,12 @@
                         <div class="flex_line">  
                             <fieldset>
                                 <legend> Validade </legend>
-                                <label for="validade"> <input type="text" name="data" maxlength="10" onkeydown="javascript: fMasc( this, mData );" style="color: red;">  </label> 
+                                <label for="validade"> <input required type="text" name="data" maxlength="10" onkeydown="javascript: fMasc( this, mData );" style="color: red;">  </label> 
                             </fieldset>
                             
                             <fieldset>
                                 <legend> 1 Habilitação </legend>
-                                <label for="habilitacao"> <input type="text" name="data" maxlength="10" onkeydown="javascript: fMasc( this, mData );">  </label> 
+                                <label for="habilitacao"> <input required type="text" name="data" maxlength="10" onkeydown="javascript: fMasc( this, mData );">  </label> 
                             </fieldset>                                          
                         </div>
 
@@ -159,5 +158,6 @@
         </div>
 
         <script type="text/javascript" src="js/mask.js"></script>  
+        <script type="text/javascript" src="js/script.js"></script>  
     </body>
 </html>
