@@ -198,4 +198,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
   color: red;
 }
+
+.errorInput {
+  border: 0.2em solid red !important;
+  color: red;
+}
 /*# sourceMappingURL=style.css.map */
